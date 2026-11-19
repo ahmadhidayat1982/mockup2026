@@ -1014,6 +1014,21 @@
                         </div>
 						<ul class="list-disc pl-4 space-y-1 text-[11px] text-gray-700 leading-snug">
 							<li>Pada Jelajah Peta secara default akan menampilkan popup modal usulan tahun sebelumnya pada role Ketua RW, dan dapat ditampilkan kembali dari tombol "Usulan Sebelumnya".</li>
+							<li>Tabular usulan sebelumnya terdapat 2 kelompok, yaitu "Usulan yang dapat diajukan" (usulan yang tidak menjadi prioritas) dan "Progres Usulan Tahun Sebelumnya" (usulan yang diakomodir)</li>
+							<li>Status progres pada tabel Usulan Sebelumnya pada kelompok Progres Usulan diambil dari progres e-monev.
+								<ul>
+									<li>Progres 0 = Diakomodasi</li>
+									<li>Progres 1 s.d 99 = Sedang Dilaksanakan</li>
+									<li>Progres 100 = Telah Dilaksanakan</li>
+								</ul>
+							</li>
+							<li>Keterangan progres pada tabel Usulan Sebelumnya pada kelompok Progres Usulan diambil dari:
+								<ul>
+									<li>UKPD yang mengerjakan</li>
+									<li>Subkegiatan yang digunakan</li>
+								</ul>
+							</li>
+							<li>Hanya dapat melakukan pengajuan ulang dari kelompok "Usulan yang dapat diajukan" pada tabel Usulan Sebelumnya</li>
 							<li>Usulan tahun sebelumnya menjadi referensi sebagai usulan baru.</li>
 							<li>Pengusulan ulang akan menjadi data baru, dan pada detil usulan akan ditampilkan kode tracking sebelumnya.</li>
 							<li>Pada kode tracking referensi pada detil usulan, bila diklik akan menampilkan popup modal detil usulan historisnya.</li>
