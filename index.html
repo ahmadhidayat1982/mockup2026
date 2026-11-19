@@ -2516,6 +2516,10 @@ function getLevelValidationColorClass(isValidated, hasilVerif) {
         }
 
         function updateRoleBasedVisibility() {
+			const menuTabular = document.getElementById('menu-tabular');
+			if (menuTabular) {
+				menuTabular.textContent = isCurrentRoleSurveyor() ? 'Survei Teknis' : 'Tabular';
+			}
             const btnAjukanTabular = document.getElementById('btnAjukanTabular');
             const btnUsulanSebelumnyaMap = document.getElementById('btnUsulanSebelumnyaMap');
             const modalBlokKosongFooter = document.getElementById('modalBlokKosongFooter');
