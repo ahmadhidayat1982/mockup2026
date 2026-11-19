@@ -182,9 +182,9 @@
         </div>
         <div class="flex items-center space-x-3 text-xs">
             <!-- Tombol Info Usulan Pengembangan Selanjutnya -->
-            <button onclick="openModalRoadmapInfo()" title="Info Usulan Pengembangan Selanjutnya" class="flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-700 text-white px-3 py-1 rounded-full cursor-pointer transition-colors shadow-sm border border-sky-400/50">
+            <button onclick="openModalRoadmapInfo()" title="Info Mockup" class="flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-700 text-white px-3 py-1 rounded-full cursor-pointer transition-colors shadow-sm border border-sky-400/50">
                 <i class="fas fa-lightbulb text-amber-300"></i>
-                <span class="font-semibold text-xs hidden sm:inline">Info Pengembangan</span>
+                <span class="font-semibold text-xs hidden sm:inline">Mockup ini tidak mengikat, namun alur dan fungsi untuk pengembangan selanjutnya diharapkan seperti mockup dimaksud.</span>
                 <span class="font-semibold text-xs sm:hidden">Info</span>
             </button>
             <div class="relative hidden sm:block">
@@ -888,62 +888,15 @@
             </div>
             <div class="p-5 overflow-y-auto custom-scrollbar space-y-3.5 text-xs text-gray-700">
                 <p class="text-gray-600 leading-relaxed">
-                    Berikut adalah beberapa rekomendasi pengembangan fitur strategis untuk meningkatkan akuntabilitas, efisiensi verifikasi, dan transparansi perencanaan Musrenbang DKI Jakarta:
+                    Mockup ini tidak mengikat, namun secara alur dan fungsi secara umum pengembangan yang diharapkan adalah seperti mockup ini:
                 </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div class="p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/50 space-y-1">
-                        <div class="font-bold text-brand-dark flex items-center gap-1.5">
-                            <i class="fas fa-map-pin text-emerald-600"></i> 1. Geotagging & Validasi Radius GPS Otomatis
-                        </div>
-                        <p class="text-[11px] text-gray-600 leading-snug">
-                            Mengunci titik koordinat (latitude/longitude) saat pengambilan foto survei lapangan serta mencocokkan otomatis dengan poligon batas wilayah RW untuk mencegah salah lokasi tagging.
-                        </p>
-                    </div>
-
-                    <div class="p-3.5 rounded-lg border border-blue-200 bg-blue-50/50 space-y-1">
-                        <div class="font-bold text-blue-800 flex items-center gap-1.5">
-                            <i class="fas fa-calculator text-blue-600"></i> 2. Kalkulasi Estimasi RAB Otomatis (e-Komponen)
-                        </div>
-                        <p class="text-[11px] text-gray-600 leading-snug">
-                            Menghitung otomatis pagu anggaran sementara secara real-time setiap kali Volume RW, Volume Kelurahan, atau Volume Kecamatan diperbarui berdasarkan standar harga satuan daerah.
-                        </p>
-                    </div>
-
-                    <div class="p-3.5 rounded-lg border border-amber-200 bg-amber-50/50 space-y-1">
-                        <div class="font-bold text-amber-800 flex items-center gap-1.5">
-                            <i class="fas fa-layer-group text-amber-600"></i> 3. Deteksi Duplikasi Usulan Berbasis Spasial & Teks
-                        </div>
-                        <p class="text-[11px] text-gray-600 leading-snug">
-                            Memberikan peringatan otomatis jika terdapat usulan baru dengan kegiatan sejenis dalam radius &lt;50 meter atau memiliki kesamaan dengan usulan yang sedang berjalan.
-                        </p>
-                    </div>
-
-                    <div class="p-3.5 rounded-lg border border-purple-200 bg-purple-50/50 space-y-1">
-                        <div class="font-bold text-purple-800 flex items-center gap-1.5">
-                            <i class="fas fa-file-signature text-purple-600"></i> 4. Generate Berita Acara & Tanda Tangan Digital (TTE)
-                        </div>
-                        <p class="text-[11px] text-gray-600 leading-snug">
-                            Ekspor otomatis Berita Acara Rembuk RW, Musrenbang Kelurahan, dan Kecamatan lengkap dengan rekap perubahan volume, catatan verifikator, serta dukungan TTE BSrE.
-                        </p>
-                    </div>
-
-                    <div class="p-3.5 rounded-lg border border-rose-200 bg-rose-50/50 space-y-1 md:col-span-2">
-                        <div class="font-bold text-rose-800 flex items-center gap-1.5">
-                            <i class="fas fa-history text-rose-600"></i> 5. Audit Trail Timeline Perubahan Antar Jenjang
-                        </div>
-                        <p class="text-[11px] text-gray-600 leading-snug">
-                            Menampilkan lini masa (timeline) riwayat perubahan status, volume, template kegiatan, dan catatan dari tingkat RW &rarr; Tim Survei Teknis &rarr; Kelurahan &rarr; Kecamatan hingga SKPD.
-                        </p>
-                    </div>
-                </div>
             </div>
             <div class="bg-gray-50 px-5 py-3 border-t border-gray-100 flex justify-end flex-shrink-0">
                 <button type="button" onclick="closeModal('modalRoadmapInfo')" class="px-4 py-1.5 bg-brand hover:bg-brand-dark text-white font-semibold rounded text-xs transition-colors">Tutup</button>
             </div>
         </div>
     </div>
-
     <!-- MODAL KONFIRMASI SIMPAN -->
     <div id="modalKonfirmasiSimpan" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center hidden p-4">
         <div class="bg-white rounded-xl shadow-2xl max-w-sm w-full overflow-hidden border border-gray-200 transform transition-all">
