@@ -175,7 +175,7 @@
         <div class="flex items-center space-x-3 text-xs">
             <button onclick="openModalRoadmapInfo()" title="Info Usulan Pengembangan Selanjutnya" class="flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-700 text-white px-3 py-1 rounded-full cursor-pointer transition-colors shadow-sm border border-sky-400/50">
                 <i class="fas fa-lightbulb text-amber-300"></i>
-                <span class="font-semibold text-xs hidden sm:inline">Mockup ini tidak mengikat, namun alur dan fungsi untuk pengembangan selanjutnya diharapkan seperti mockup dimaksud.</span>
+                <span class="font-semibold text-xs hidden sm:inline">Mockup ini tidak mengikat, namun alur dan fungsi diharapkan seperti yang dimaksud.</span>
                 <span class="font-semibold text-xs sm:hidden">Info</span>
             </button>
             <div class="relative hidden sm:block">
@@ -997,14 +997,119 @@
             <div class="bg-gradient-to-r from-brand-dark to-sky-700 text-white px-5 py-3.5 flex justify-between items-center flex-shrink-0">
                 <div class="flex items-center gap-2">
                     <i class="fas fa-rocket text-amber-300 text-base"></i>
-                    <h3 class="font-bold text-xs md:text-sm tracking-wide">Usulan Pengembangan Sistem Musrenbang Selanjutnya</h3>
+                    <h3 class="font-bold text-xs md:text-sm tracking-wide">Mockup Pengembangan Sistem Musrenbang Selanjutnya</h3>
                 </div>
                 <button onclick="closeModal('modalRoadmapInfo')" class="text-white hover:text-gray-200 font-bold text-lg">&times;</button>
             </div>
             <div class="p-5 overflow-y-auto custom-scrollbar space-y-3.5 text-xs text-gray-700">
+
+
                 <p class="text-gray-600 leading-relaxed">
-                    Mockup ini tidak mengikat, namun secara alur dan fungsi secara umum pengembangan yang diharapkan adalah seperti mockup ini:
+                    Mockup ini tidak mengikat, namum alur dan fungsi diharapkan seperti yang telah dibuat. Berikut adalah beberapa mockup pengembangan dari e-Musrenbang Rembuk RW:
                 </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/50 space-y-1">
+                        <div class="font-bold text-brand-dark flex items-center gap-1.5">
+                            <i class="fas fa-map-pin text-emerald-600"></i> 1. Input usulan oleh Ketua RW
+                        </div>
+						<ul class="list-disc pl-4 space-y-1 text-[11px] text-gray-700 leading-snug">
+							<li>Pada Jelajah Peta secara default akan menampilkan popup modal usulan tahun sebelumnya pada role Ketua RW, dan dapat ditampilkan kembali dari tombol "Usulan Sebelumnya".</li>
+							<li>Usulan tahun sebelumnya menjadi referensi sebagai usulan baru.</li>
+							<li>Pengusulan ulang akan menjadi data baru, dan pada detil usulan akan ditampilkan kode tracking sebelumnya.</li>
+							<li>Pada kode tracking referensi pada detil usulan, bila diklik akan menampilkan popup modal detil usulan historisnya.</li>
+							<li>Pada Jelajah Peta, dapat menampilkan geotagging dari usulan tahun sebelumnya, dan terdapat tombol show/hide (dengan ikon eye) untuk menampilkan geotagging tersebut, defaultnya adalah hide.</li>
+							<li>Terdapat label quota usulan 0/5 (usage/max).</li>
+						</ul>
+                    </div>
+					
+                    <div class="p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/50 space-y-1">
+                        <div class="font-bold text-brand-dark flex items-center gap-1.5">
+                            <i class="fas fa-map-pin text-emerald-600"></i>2. Submit Usulan oleh Lurah
+                        </div>
+						<ul class="list-disc pl-4 space-y-1 text-[11px] text-gray-700 leading-snug">
+							<li>Submit usulan per RW dilakukan oleh role Lurah dari menu Tabular.</li>
+							<li>Bila telah dilakukan submit maka semua usulan tidak dapat di edit oleh Ketua RW dan dapat dilakukan survei.</li>
+							<li>Role Lurah tidak dapat melakukan unsubmit.</li>
+						</ul>
+                    </div>
+					
+                    <div class="p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/50 space-y-1">
+                        <div class="font-bold text-brand-dark flex items-center gap-1.5">
+                            <i class="fas fa-map-pin text-emerald-600"></i>3. Survei Teknis
+                        </div>
+						<ul class="list-disc pl-4 space-y-1 text-[11px] text-gray-700 leading-snug">
+							<li>Terdapat menu "Survei Teknis" yang berisi tabel tabular data usulan, user dapat klik detil usulan untuk menampilkan detil usulan dan input hasil survei teknis.</li>
+							<li>Pada tabel tabular terdapat label informasi "Dapat dilakukan survei" atau "Belum dapat dilakukan survei" (status submit = true).</li>
+							<li>Hanya dapat input hasil survei bila status submit = true.</li>
+							<li>Dapat merekomendasikan penyesuaian template tertentu.
+								<p><b>Speedbump <------> Speed Trap</b></p>
+								<ul>
+									<li>Pemasangan Pita Penggaduh/Speed Trap</lI>
+									<li>Pemasangan Speed Bump</lI>
+								</ul>
+								<p><b>Hadroh <------> Marawis <------> Rebana</b></p>
+								<ul>
+									<li>Pengadaan Alat Musik Marawis</lI>
+									<li>Pengadaan Alat Musik Rebana</lI>
+									<li>Pengadaan Alat Musik Hadroh</lI>
+								</ul>
+							</li>
+							<li>Dapat mengambil foto dari kamera devices atau upload dari devices.</li>
+						</ul>
+                    </div>
+					
+                    <div class="p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/50 space-y-1">
+                        <div class="font-bold text-brand-dark flex items-center gap-1.5">
+                            <i class="fas fa-map-pin text-emerald-600"></i>4. Verifikasi & Validasi Lurah
+                        </div>
+						<ul class="list-disc pl-4 space-y-1 text-[11px] text-gray-700 leading-snug">
+							<li>Lurah dapat mengganti template usulan tertentu.
+								<p><b>Speedbump <------> Speed Trap</b></p>
+								<ul>
+									<li>Pemasangan Pita Penggaduh/Speed Trap</lI>
+									<li>Pemasangan Speed Bump</lI>
+								</ul>
+								<p><b>Hadroh <------> Marawis <------> Rebana</b></p>
+								<ul>
+									<li>Pengadaan Alat Musik Marawis</lI>
+									<li>Pengadaan Alat Musik Rebana</lI>
+									<li>Pengadaan Alat Musik Hadroh</lI>
+								</ul>
+							</li>
+							<li>Pergantian template akan menjadi usulan baru, usulan sebelumnya menjadi referensi historis.</li>
+							<li>Lurah dapat melakukan submit usulan RW, setelah status submit = true, maka RW di kelurahan terkait tidak dapat melakukan edit/input.</li>
+						</ul>
+                    </div>
+					
+                    <div class="p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/50 space-y-1">
+                        <div class="font-bold text-brand-dark flex items-center gap-1.5">
+                            <i class="fas fa-map-pin text-emerald-600"></i>5. Verifikasi & Validasi Camat
+                        </div>
+						<ul class="list-disc pl-4 space-y-1 text-[11px] text-gray-700 leading-snug">
+							<li>Camat dapat mengganti UKPD pada usulan yang terkait RW kumuh.
+								<p>Pembangunan, peningkatan, dan pemeliharaan fisik konstruksi Jalan, Saluran Drainase/ Saluran Tepi Jalan pada RW Kumuh</p>
+								<ul>
+									<li>SUKU DINAS BINA MARGA (KOTA)</lI>
+									<li>SUKU DINAS SUMBER DAYA AIR (KOTA/KABUPATEN)</lI>
+									<li>SUKU DINAS PERUMAHAN RAKYAT DAN KAWASAN PERMUKIMAN(KOTA/KABUPATEN)</lI>
+								</ul>
+							</li>
+						</ul>
+                    </div>
+					
+                    <div class="p-3.5 rounded-lg border border-emerald-200 bg-emerald-50/50 space-y-1">
+                        <div class="font-bold text-brand-dark flex items-center gap-1.5">
+                            <i class="fas fa-map-pin text-emerald-600"></i>6. Unsubmit Usulan oleh Bappeda Admin
+                        </div>
+						<ul class="list-disc pl-4 space-y-1 text-[11px] text-gray-700 leading-snug">
+							<li>Fitur Unsubmit hanya ada pada role Bappeda Admin.</li>
+							<li>Bappeda Admin tidak dapat melakukan Submit.</li>
+							<li>Bila dilakukan Unsubmit maka status dan hasil survei teknis menjadi clear.</li>
+						</ul>
+                    </div>
+					
+				</div>
             </div>
             <div class="bg-gray-50 px-5 py-3 border-t border-gray-100 flex justify-end flex-shrink-0">
                 <button type="button" onclick="closeModal('modalRoadmapInfo')" class="px-4 py-1.5 bg-brand hover:bg-brand-dark text-white font-semibold rounded text-xs transition-colors">Tutup</button>
